@@ -18,16 +18,16 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         java-version: 1.8
-    - name: "Permission to gradle File"
-      run: chmod +x gradlew
-    - name: Build with Gradle
-      run: ./gradlew assemble
+#     - name: "Permission to gradle File"
+#       run: chmod +x gradlew
+#     - name: Build with Gradle
+#       run: ./gradlew assemble
     - name: Commit files
       run: |
         echo ${{ github.ref }}
         git add .
-        git config --local user.email "test@test.com"
-        git config --local user.name "test123"
+        git config --local user.email "bulumaknight@gmail.com"
+        git config --local user.name "buluma"
         git commit -m "ci: Automated build push" -a | exit 0
     - name: Push changes
       if: github.ref == 'refs/heads/master'
