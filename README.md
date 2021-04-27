@@ -1,5 +1,7 @@
 # Hello World PhoneGap Template [![bitHound Score][bithound-img]][bithound-url]
 
+[![Android Builder](https://github.com/buluma/phonegap-template-hello-world/actions/workflows/builder.yml/badge.svg)](https://github.com/buluma/phonegap-template-hello-world/actions/workflows/builder.yml)
+
 A PhoneGap Hello World template
 
 ## Usage
